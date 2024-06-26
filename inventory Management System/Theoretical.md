@@ -1,4 +1,4 @@
-Theoretical Questions:
+#Theoretical Questions:
 
 1. Explain the difference between primitive types and reference types in JavaScript.
 * Primitive types are like numbers, strings and booleans. They are stored directly in the stack adn they have a fixed aize.
