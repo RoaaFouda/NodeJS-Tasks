@@ -36,3 +36,10 @@ A pure function is one that is deterministic which means that it gives the same 
 * Reduce --> Not Destructive
 * Sort --> Destructive
 * Splice --> Destructive
+* Slice --> Not Destructive
+* Concat --> Not Destructive
+* Fill --> Destructive
+* Includes --> Not Destructive
+* joins --> Not Destructive
+* reverse --> Destructive
+
