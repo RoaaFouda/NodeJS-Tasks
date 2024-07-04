@@ -2,9 +2,9 @@
 
 ## Question 1
 Compare between the three types of quantifiers in regular expressions (?, +, *)
-* ? means that the preceding element is optional, there can be zero or one of it.
-* + means that there can be one or more of the preceding element.
-* * means that there can be zero or more of the preceding element.
+* `?` means that the preceding element is optional, there can be zero or one of it.
+* `+` means that there can be one or more of the preceding element.
+* `*` means that there can be zero or more of the preceding element.
 
 ## Question 2
 What are the characters that can be represented by \w and \b in a regular expression?
