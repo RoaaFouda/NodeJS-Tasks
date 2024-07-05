@@ -37,3 +37,32 @@ const regexp = /^hand(.+)?(s|y|le)$/i;
 const arr = ['handOn', 'hands', 'hanDLes', 'Handcuffs', 'handmade', 'in-hands', 'HANDINGLY'];
 const newArray = arr.filter(element => regexp.test(element));
 console.log(newArray);
+
+// Applying the concept of closures, create a counter using JavaScript and HTML. The counter should be able to increment, decrement, and reset its value, demonstrating the practical use of closures to maintain state between function calls.
+
+const counter = (n) => {
+    let tmp = n;
+    function increment(){
+        return ++tmp;
+    }
+
+    function decrement(){
+        return --tmp;
+    }
+
+    function reset(){
+        tmp = n;
+        return tmp;
+    }
+    return{
+        increment, 
+        decrement,
+        reset
+    }
+}
+
+const obj = counter(5);
+console.log(obj.increment());
+console.log(obj.decrement());
+console.log(obj.decrement());
+console.log(obj.reset());
