@@ -123,8 +123,8 @@ console.log(person.updateScore(88).AddClass("Programming"));
 
         player.introduce();
 ```
-* Since the function inside the object is an arrow function then the `this` keyword will be referring to the global object "window" which will
-cause this code to uotput undefined.
+* Since the function inside the object is an arrow function then the `this` keyword will be referring to the global object `window` which will
+cause this code to output undefined.
 
 ```js
         const player = {
@@ -165,4 +165,4 @@ cause this code to uotput undefined.
     introduce();
     introduce.call(player);
 ```
-* In the first function call, `this` will be referring to the global object "window". In the second call since we're using the `call` method, then `this` will be referring to the player object as it was passed to the `call` function as an argument.
+* In the first function call, `this` will be referring to the global object `window`. In the second call since we're using the `call` method, then `this` will be referring to the player object as it was passed to the `call` function as an argument.
