@@ -112,21 +112,21 @@ console.log(person.updateScore(88).AddClass("Programming"));
 ```
 ### Question 2
  
-    ```js
-        const player = {
-            firstName: "Ahmed",
-            lastName: "Hafez",
-            introduce: () => {
-                console.log(`Hey, I'm ${this.firstName} ${this.lastName}`);
-            }
-        }
+```js
+    const player = {
+    firstName: "Ahmed",
+    lastName: "Hafez",
+    introduce: () => {
+        console.log(`Hey, I'm ${this.firstName} ${this.lastName}`);
+    }
+}
 
         player.introduce();
-    ```
+```
 * Since the function inside the object is an arrow function then the `this` keyword will be referring to the global object "window" which will
 cause this code to uotput undefined.
 
-    ```js
+```js
         const player = {
             firstName: "Ahmed",
             lastName: "Hafez",
@@ -136,33 +136,33 @@ cause this code to uotput undefined.
         }
 
         player.introduce();
-    ```
+ ```
 * In this context, `this` will be referring to the player object.
 
-     ```js
-        function introduce() {
-            console.log(`Hey, I'm ${this.firstName} ${this.lastName}`);
-        }
-        const player = {
-            firstName: "Ahmed",
-            lastName: "Hafez",
-            introduce
-        }
+```js
+    function introduce() {
+         console.log(`Hey, I'm ${this.firstName} ${this.lastName}`);
+    }
+    const player = {
+        firstName: "Ahmed",
+        lastName: "Hafez",
+        introduce
+     }
 
         player.introduce();
-     ```
+```
 * here, `this` will also be referring to the player object, because it was called as a method of that object.
 
-     ```js
-        function introduce() {
-            console.log(`Hey, I'm ${this.firstName} ${this.lastName}`);
-        }
-        const player = {
-            firstName: "Ahmed",
-            lastName: "Hafez"
-        }
+```js
+    function introduce() {
+        console.log(`Hey, I'm ${this.firstName} ${this.lastName}`);
+    }
+    const player = {
+        firstName: "Ahmed",
+        lastName: "Hafez"
+     }
 
-        introduce();
-        introduce.call(player);
-    ```
+    introduce();
+    introduce.call(player);
+```
 * In the first function call, `this` will be referring to the global object "window". In the second call since we're using the `call` method, then `this` will be referring to the player object as it was passed to the `call` function as an argument.
